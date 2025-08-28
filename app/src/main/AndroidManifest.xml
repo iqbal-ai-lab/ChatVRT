@@ -19,7 +19,7 @@
   <application
     android:allowBackup="true"
     android:label="ChatVRT"
-    android:icon="@mipmap/ic_launcher"
+    android:icon="@drawable/logo"
     android:supportsRtl="true"
     android:theme="@style/Theme.ChatVRT">
 
@@ -44,4 +44,5 @@
       </intent-filter>
     </activity>
   </application>
+
 </manifest>
