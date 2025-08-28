@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black">
+
+  <TextView
+    android:id="@+id/btnPlus"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:gravity="center"
+    android:text="ChatVRT"
+    android:textColor="@color/white"
+    android:background="@drawable/bg_pill"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_goneMarginTop="24dp"
+    android:layout_marginTop="24dp"/>
+
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Apa yang bisa saya bantu?"
+    android:textColor="@color/white"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+  <LinearLayout
+    android:id="@+id/actions"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/title"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="24dp">
+
+    <TextView style="@style/TextButton" android:text="Buat gambar"/>
+    <TextView style="@style/TextButton" android:text="Kejutkan saya"/>
+    <TextView style="@style/TextButton" android:text="Rangkum teks"/>
+    <TextView style="@style/TextButton" android:text="Dapatkan nasihat"/>
+    <TextView style="@style/TextButton" android:text="Analisis data"/>
+    <TextView style="@style/TextButton" android:text="Lainnya"/>
+  </LinearLayout>
+
+  <style name="TextButton">
+    <item name="android:layout_width">220dp</item>
+    <item name="android:layout_height">48dp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:background">@drawable/ripple_btn</item>
+    <item name="android:layout_marginTop">12dp</item>
+  </style>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
